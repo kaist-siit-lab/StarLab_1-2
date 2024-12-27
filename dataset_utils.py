@@ -6,7 +6,6 @@ import json
 qa_dict= ['A','B','C','D']
 openbookdict = {'A':0,'B':1,'C':2,'D':3}
 class TextDataset(Dataset):
-    # 
     def __init__(self, texts, labels):
         """
         texts: 평가할 텍스트의 리스트
