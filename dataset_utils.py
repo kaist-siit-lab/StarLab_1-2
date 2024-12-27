@@ -2,11 +2,10 @@ from datasets import load_dataset
 from torch.utils.data import Dataset, DataLoader
 import json
 
-
+#
 qa_dict= ['A','B','C','D']
 openbookdict = {'A':0,'B':1,'C':2,'D':3}
 class TextDataset(Dataset):
-    # 데이터셋의 전처리를 해주는 부분  
     def __init__(self, texts, labels):
         """
         texts: 평가할 텍스트의 리스트
