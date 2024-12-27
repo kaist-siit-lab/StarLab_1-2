@@ -3,6 +3,7 @@ from torch.utils.data import Dataset, DataLoader
 import json
 
 # add more datasets here
+# dataset_names = ['sst2', 'qnli', 'mnli', 'agnews', 'yelp_polarity', 'rte', 'mrpc', 'snli', 'bigbench_causal_judgement', 'bigbench_epistemic_reasoning', 'bigbench_implicatures', 'bigbench_presuppositions_as_nli', 'bigbench_snarks', 'bigbench_sports_understanding', 'bigbench_navigate', 'mmlu_electrical_engineering', 'mmlu_econometrics']
 qa_dict= ['A','B','C','D']
 openbookdict = {'A':0,'B':1,'C':2,'D':3}
 class TextDataset(Dataset):
